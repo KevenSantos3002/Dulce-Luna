@@ -17,7 +17,18 @@ html,body{margin:0;padding:0;font-family:Montserrat, sans-serif;background:var(-
 .site-header{background:var(--dark);color:var(--white)}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:16px;padding:10px 0}
-.logo{width:68px;height:68px;object-fit:cover;border-radius:10px;border:3px solid rgba(255,255,255,0.06)}
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 14px rgba(255,255,255,0.4);
+}
+.logo:hover {
+  transform: scale(1.05);
+  transition: .2s;
+}
 .brand-text h1{margin:0;font-size:20px;color:var(--main)}
 .brand-text .tag{font-size:13px;color:var(--main);opacity:0.9}
 .nav a{margin-left:18px;color:var(--main);font-weight:600;text-decoration:none}
@@ -41,6 +52,50 @@ html,body{margin:0;padding:0;font-family:Montserrat, sans-serif;background:var(-
   justify-content: center;
   color: white;
 }
+.hero-content {
+  text-align: center;
+  max-width: 760px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 14px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+.hero .btn {
+  background: var(--dark);
+  color: var(--main);
+  font-size: 18px;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.hero .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+}
+@media (max-width: 640px){
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
 
 /* botão laranja (destaque) e estilos gerais */
 .btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;border:0;text-decoration:none}
